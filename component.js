@@ -80,19 +80,11 @@ var hotSettings = {
         '变化幅度'
     ],
     rowHeights: 40,
-    colWidths: 50,
+    colWidths: 170,
     className: "htCenter htMiddle",
-    exportFile: true,
-    mergeCells: true,
-    contextMenu: true,
     manualRowResize: true,
-    manualColumnMove: true,
-    manualRowMove: true,
     manualColumnResize: true,
-    filters: true,
-    contextMenu: true,
-    hiddenColumns: true,
-    hiddenColumns: true,
+    filters: true
 };
 var hot = new Handsontable(hotElement, hotSettings);
 
@@ -104,23 +96,13 @@ var option = {
         text: 'JavaScript语言排名变化'
     },
     tooltip: {
-        show: true,
-        axisPointer: {
-            type: 'line',
-            lineStyle: {
-                color: '#eeeeee',
-                width: 1
-            }
-        }
+        trigger: 'axis'
     },
     legend: {
         data: ['排名']
     },
     xAxis: {
-        data: ["2000", "2005", "2010", "2015", "2020"],
-        axisPointer: {
-            show: true
-        }
+        data: ["2000", "2005", "2010", "2015", "2020"]
     },
     yAxis: {},
     series: [{
